@@ -1,0 +1,194 @@
+.parent {
+    display: flex;
+    flex-direction: row;
+    .chat {
+        width: calc(100% - 300px);
+        background-color: whitesmoke;
+        margin-bottom: 4.5rem;
+        .Background {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            .Study-Mate {
+                font-weight: bold;
+                font-size: 36px;
+            }
+            .Background-Logo {
+                height: 148px;
+                width: 148px;
+            }
+            .Description {
+                font-size: 26px;
+                height: 31px;
+                width: 260px;
+            }
+        }
+        .Current-File {
+            background-color: white;
+            position: fixed;
+            bottom: 75px;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            padding: 7px;
+            font-size: 10px;
+            border-radius: 16px;
+            .current-file-text {
+                margin-left: 10px;
+            }
+            img {
+                width: 20px;
+                height: 20px;
+            }
+        }
+        
+    }
+}
+
+.chat-history-conatiner {
+    margin-bottom: 4rem;
+    margin-top: 1.2rem;
+  }
+  .img_cont_msg {
+    height: 40px;
+    width: 40px;
+  }
+  
+  .user_img_msg {
+    height: 40px;
+    width: 40px;
+    border: 1.5px solid #f5f6fa;
+  }
+  
+  .msg_cotainer {
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 10px;
+    border-radius: 25px;
+    background-color: #82ccdd;
+    padding: 10px;
+    position: relative;
+    min-width: 80px;
+  }
+  
+  .msg_cotainer_send {
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right: 10px;
+    border-radius: 25px;
+    background-color: #78e08f;
+    padding: 10px;
+    position: relative;
+    min-width: 80px;
+  }
+  
+  .msg_time {
+    position: absolute;
+    left: 0;
+    bottom: -15px;
+    color: rgb(12 12 12 / 70%);
+    font-size: 10px;
+  }
+  
+  .msg_time_send {
+    position: absolute;
+    right: 0;
+    bottom: -15px;
+    color: rgb(12 12 12 / 70%);
+    font-size: 10px;
+  }
+
+.history {
+    background-color: white;
+    position: fixed;
+    top: 0;
+    right: 0.3rem;
+    left: auto;
+    height: 100%;
+    display: flex;
+    width: 310px;
+    flex-direction: column;
+    float: right;
+    padding: 2rem 0.5rem 0.5rem 0.5rem;
+    z-index: 2000;
+    overflow-y: auto;
+
+    .message {
+        font-size: 18px;
+    }
+
+    .break {
+        width: 100%;
+    }
+    .item {
+        border-radius: 10px;
+        padding: 0.5rem;
+        .file {
+            display: flex;
+            flex-direction: row;
+            justify-content: start;
+            img { width: 20px; height: 20px; }
+            .file-name {
+                flex-grow: 1;
+                margin: 0 .3rem;
+                font-size: 14px;
+            }
+        }
+        .summary {
+            margin-top: .2rem;
+            font-size: 10px;
+        }
+    }
+
+    .file-name:hover {
+        color: purple;
+        cursor: pointer;
+    }
+    .trash-bin:hover {
+        cursor: pointer;
+    }
+}
+
+.upload-container {
+    position: fixed;
+    bottom: 75px;
+    left: auto;
+    right: 0;
+    .card {
+        margin-right: 330px;
+    }
+}
+
+.chat-input {
+    position: fixed;
+    bottom: 10px;
+    width: 100%;
+    left: 0;
+    
+    .Input-Bar {
+        margin-left: 2rem;
+        display: flex;
+        flex-direction: row;
+        padding: 10px;
+        border-radius: 16px;
+        background-color: white;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        justify-content: start;
+        margin-right: 330px;
+        
+        .Input-Query {
+            border:  0px white solid;
+            flex-grow: 1;
+            margin-right: 0.18rem;
+        }
+    
+        .Send-Button {
+            border: 0px white solid;
+            background-color: white;
+        }
+        
+        .Upload-File-Button {
+            border: 0px white solid;
+            background-color: white;
+        }
+    }
+}
